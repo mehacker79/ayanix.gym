@@ -241,16 +241,75 @@ tr:hover td{background:none}.tw{overflow:visible}
 .mb{padding:11px 12px}.mb b{font-size:14px;display:block;margin-bottom:2px}.mb small{color:var(--m);font-size:12px}
 @media(max-width:700px){.mg{grid-template-columns:1fr 1fr;gap:10px}.mi{height:104px}.mi svg{width:70px;height:70px}.mp{padding:16px;border-radius:20px}
 #s13 .card .grid[style*="auto"]{grid-template-columns:1fr 1fr!important}}
+
+/* ===== PROFESSIONAL DARK (light-black) THEME ===== */
+:root{--bg:#1a1b20;--g:rgba(255,255,255,.045);--b:rgba(255,255,255,.09);--t:#f2f3f5;--m:#9b9eaa;--ok:#34d27b;--w:#f5a524;--bad:#ff5c5f}
+body{background:var(--bg);color:var(--t)}
+::-webkit-scrollbar-thumb{background:#3a3b42}
+.bgfx{background:radial-gradient(900px 520px at 85% -10%,rgba(255,87,51,.10),transparent),linear-gradient(160deg,#1e1f25,#16171b)}
+.bgfx:after{background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:46px 46px;animation:none}
+.b1{background:#ff5733;opacity:.13}.b2{background:#4b6fb5;opacity:.12}#mb{background:rgba(255,87,51,.14)}
+.ecg{opacity:.28}
+.sweep{position:absolute;top:0;left:0;right:0;height:2px;background:rgba(255,87,51,.16);overflow:hidden}
+.sweep:after{content:"";position:absolute;top:0;bottom:0;width:28%;background:linear-gradient(90deg,transparent,#FF5733,transparent);animation:swp 4.5s ease-in-out infinite}
+@keyframes swp{from{left:-28%}to{left:100%}}
+.tick{background:rgba(255,87,51,.09);border:1px solid rgba(255,87,51,.25);color:#ffb59f;box-shadow:none}
+.brand small{background:rgba(255,255,255,.07);box-shadow:none}
+.brand .lang{margin-left:auto;display:flex;gap:2px;background:rgba(255,255,255,.06);padding:3px;border-radius:99px;border:1px solid var(--b)}
+.brand .lang+small{margin-left:10px}
+.lang button{border:0;background:none;color:var(--m);padding:5px 11px;border-radius:99px;font-size:12px;font-weight:700;cursor:pointer;transition:.2s}.lang button.on{background:var(--a);color:#fff}
+.top h1{background:none;-webkit-text-fill-color:currentColor;color:var(--t);animation:none}
+.kpi big{background:linear-gradient(135deg,#fff,#ffb59f);-webkit-background-clip:text;background-clip:text;color:transparent}
+.role{background:rgba(255,255,255,.06);box-shadow:none}
+.card{background:var(--g);border:1px solid var(--b);box-shadow:0 10px 30px rgba(0,0,0,.3)}
+.card:hover{box-shadow:0 18px 40px rgba(0,0,0,.4);border-color:rgba(255,87,51,.4)}
+td{border-bottom:1px solid rgba(255,255,255,.06)}tr:hover td{background:rgba(255,255,255,.03)}
+input,select,textarea{background:rgba(255,255,255,.06);color:var(--t);border:1px solid var(--b)}
+textarea{width:100%;border-radius:11px;padding:10px 12px;font:inherit;min-height:96px;resize:vertical;outline:0}textarea:focus{border-color:var(--a)}
+input[type=date],input[type=time]{color-scheme:dark}
+select option{background:#24252b;color:var(--t)}
+.gh{background:rgba(255,255,255,.06);color:var(--t);border:1px solid var(--b)}
+.ok{background:rgba(52,210,123,.14);color:#4be08d}.wn{background:rgba(245,165,36,.15);color:#ffbe55}.bd{background:rgba(255,92,95,.15);color:#ff7b7d}.or{background:rgba(255,87,51,.15);color:#ff8a6a}
+.bar{background:rgba(255,255,255,.09)}
+.plan,.seg button,.ex,.cc{background:rgba(255,255,255,.05);box-shadow:none;color:var(--t)}.plan.on{background:rgba(255,87,51,.12)}.seg button.on{background:var(--a);color:#fff}
+.ex .cb{border-color:#555}
+.phone,.tablet{background:#202127;border:8px solid #2b2c33;box-shadow:0 30px 70px rgba(0,0,0,.5)}.phone:before{background:#2b2c33}
+.cam{background:repeating-linear-gradient(45deg,#1b1c21 0 12px,#17181c 12px 24px)}
+.succ{background:rgba(22,23,27,.95)}
+.donut div{background:#202127}
+.rcpt{background:rgba(255,255,255,.04);border-color:#44464f}
+.st2>div{background:rgba(255,255,255,.05)}
+.cal i{background:rgba(255,255,255,.06)}.cal i.f{opacity:.35}
+#mdl{background:rgba(8,8,10,.6)}.mp{background:#202127;border:1px solid var(--b);box-shadow:0 40px 90px rgba(0,0,0,.6)}.mx{background:rgba(255,255,255,.08);color:var(--t)}
+.mc{background:#23242a;box-shadow:0 8px 24px rgba(0,0,0,.3)}.mi{color:#ff8a5c}
+#toast div{background:#2a2b32;color:var(--t);box-shadow:0 14px 34px rgba(0,0,0,.45)}
+#dock{background:rgba(32,33,39,.86);border:1px solid var(--b);box-shadow:0 22px 54px rgba(0,0,0,.5)}
+.lc{background:rgba(32,33,39,.88);border:1px solid var(--b);box-shadow:0 30px 70px rgba(0,0,0,.5)}
+.lt{background:rgba(255,255,255,.06)}.ph span{background:rgba(255,255,255,.06)}
+.chip,.mods span{background:rgba(255,255,255,.07);box-shadow:none}
+.probs>div{background:rgba(255,255,255,.05)}
+.fc{background:rgba(38,39,46,.92);box-shadow:0 16px 36px rgba(0,0,0,.4)}
+.hero .pitch p{color:var(--m)}
+/* new components */
+.cls{display:flex;gap:12px;align-items:center;background:rgba(255,255,255,.05);border:1px solid var(--b);border-radius:16px;padding:12px;margin-bottom:10px;transition:.2s}.cls:hover{border-color:rgba(255,87,51,.4)}
+.ct{min-width:62px;text-align:center;font-weight:800;font-size:20px;color:var(--a)}.ct small{display:block;font-size:11px;color:var(--m);font-weight:600}
+.ci{flex:1;min-width:0}.ci b{display:block}.ci small{color:var(--m);font-size:12px;display:block}.ci .bar{margin:6px 0 4px;height:6px}
+.pks{display:flex;flex-wrap:wrap;gap:6px}.pk{display:inline-flex;gap:6px;align-items:center;background:rgba(255,255,255,.06);border:1px solid var(--b);border-radius:99px;padding:5px 10px;font-size:12px}.pk i{font-style:normal}
+#cc17{display:grid;grid-template-columns:repeat(7,1fr);gap:6px}#cc17>div{background:rgba(255,255,255,.05);border:1px solid var(--b);border-radius:12px;padding:8px 2px;text-align:center}
+#cc17 small{display:block;color:var(--m);font-size:10px}#cc17 b{font-size:18px}#cc17 .has{border-color:var(--a);background:rgba(255,87,51,.1)}
+.post{padding:12px;border:1px solid var(--b);border-radius:14px;margin-bottom:10px;background:rgba(255,255,255,.04)}.post p{font-size:14px;margin-bottom:8px;line-height:1.5}
+.hd{font-size:12px;color:var(--m);margin-top:8px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+@media(max-width:700px){
+tr{background:rgba(255,255,255,.05);box-shadow:none}
+.brand{flex-wrap:wrap}.brand .lang{order:5;width:100%;margin:8px 0 0}.brand .lang button{flex:1;padding:6px 4px}.brand .lang+small{margin-left:auto}
+.cls{padding:10px}.ct{min-width:52px;font-size:17px}
+#cc17{gap:4px}
+}
 </style></head><body class="guest">
-<div class="bgfx" id="bgfx"><i class="blob b1"></i><i class="blob b2"></i><i class="blob" id="mb"></i>
-<div class="bt r1"><span>LIFT • SWEAT • REPEAT • NO EXCUSES • LIFT • SWEAT • REPEAT • NO EXCUSES • LIFT • SWEAT • REPEAT • NO EXCUSES • LIFT • SWEAT • REPEAT • NO EXCUSES • </span></div><div class="bt r2"><span>LIFT • SWEAT • REPEAT • NO EXCUSES • LIFT • SWEAT • REPEAT • NO EXCUSES • LIFT • SWEAT • REPEAT • NO EXCUSES • LIFT • SWEAT • REPEAT • NO EXCUSES • </span></div>
-<svg class="bar1" viewBox="0 0 640 120" fill="none" stroke="currentColor" stroke-width="5"><rect x="70" y="52" width="500" height="16" rx="6"/><rect x="20" y="10" width="26" height="100" rx="6"/><rect x="50" y="22" width="22" height="76" rx="5"/><rect x="568" y="22" width="22" height="76" rx="5"/><rect x="594" y="10" width="26" height="100" rx="6"/></svg>
-<svg class="plate" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="4"><circle cx="100" cy="100" r="96"/><circle cx="100" cy="100" r="84"/><circle cx="100" cy="100" r="46"/><circle cx="100" cy="100" r="12"/><path d="M100 16V54M100 146V184M16 100H54M146 100H184M40 40L67 67M133 133L160 160M160 40L133 67M67 133L40 160"/></svg>
-<svg class="ecg" viewBox="0 0 1200 120" preserveAspectRatio="none" fill="none"><path d="M0,60 H90 L105,60 L118,16 L136,104 L150,60 H300 L315,60 L328,16 L346,104 L360,60 H510 L525,60 L538,16 L556,104 L570,60 H720 L735,60 L748,16 L766,104 L780,60 H930 L945,60 L958,16 L976,104 L990,60 H1200"/></svg>
-<i class="haz"></i></div>
+<div class="bgfx" id="bgfx"><i class="blob b1"></i><i class="blob b2"></i><i class="blob" id="mb"></i><svg class="ecg" viewBox="0 0 1200 120" preserveAspectRatio="none" fill="none"><path d="M0,60 H90 L105,60 L118,16 L136,104 L150,60 H300 L315,60 L328,16 L346,104 L360,60 H510 L525,60 L538,16 L556,104 L570,60 H720 L735,60 L748,16 L766,104 L780,60 H930 L945,60 L958,16 L976,104 L990,60 H1200"/></svg><i class="sweep"></i></div>
 <div id="dock"></div>
 <main>
-<div class="brand"><i>⚡</i>IronPulse<small><span class="live"></span>Live demo</small></div>
+<div class="brand"><i>⚡</i>IronPulse<div class="lang"><button data-l="en">English</button><button data-l="hg">Hinglish</button><button data-l="hi">हिंदी</button><button data-l="mr">मराठी</button></div><small><span class="live"></span>Live demo</small></div>
 <div class="tick"><div id="tk"></div></div>
 <div class="seg" id="subnav"></div>
 <div class="top"><div><h1 id="ttl"></h1><p id="sub"></p></div><div class="role">Signed in as <b id="rl">Owner</b></div></div>
@@ -261,7 +320,7 @@ tr:hover td{background:none}.tw{overflow:visible}
 <h2>Aapka gym.<br>Ab <em>autopilot</em> par.</h2>
 <p>Fees ka register, bhoole hue renewals aur gayab members — teeno problems ka ek app me solution.</p>
 <div class="probs"><div><b>1</b><span>Fees ka register<small>200 members, sab haath se likha</small></span></div><div><b>2</b><span>Renewal miss<small>Plan khatam, na member ko yaad, na aapko</small></span></div><div><b>3</b><span>Gayab members<small>Pehle mahine roz, teesre mahine ghost</small></span></div></div>
-<div class="mods"><span>🔐 Login 1</span><span>📱 Member 3</span><span>🧾 Reception 3</span><span>🏋️ Trainer 2</span><span>👑 Owner 5</span></div>
+<div class="mods"><span>🔐 Login</span><span>📱 Member app</span><span>🧾 Reception</span><span>🏋️ Trainer</span><span>👑 Owner</span><span>🌐 4 languages</span></div>
 <div class="fc f1">💰 ₹18,400 aaj ki collection</div><div class="fc f2">🟢 42 members andar</div><div class="fc f3">🔔 6 renewals due</div></div>
 <div class="lc" id="lcard">
 <div class="lt"><i></i><button class="on" data-t="m">📱 Member</button><button data-t="o">👑 Owner / Team</button></div>
@@ -338,7 +397,7 @@ tr:hover td{background:none}.tw{overflow:visible}
 <div class="card kpi"><small>Expired members</small><big id="k10e" style="color:var(--bad)">0</big><em style="color:var(--w)">Follow up today</em></div></div>
 <div class="grid g4" style="margin-bottom:16px"><div class="card kpi"><small>Total members</small><big id="k10m">0</big><em>across all branches</em></div><div class="card kpi"><small>New this month</small><big id="k10n">0</big><em>joined in last 30 days</em></div><div class="card kpi"><small>Gym branches</small><big>3</big><em>Main Road · City Center · Highway</em></div><div class="card kpi"><small>Machines</small><big id="k10q">0</big><em>types in inventory</em></div></div>
 <div class="grid g2"><div class="card"><h3>Revenue — last 7 days (₹)</h3><div class="chart" id="ch"></div></div>
-<div class="card"><h3>Active vs expired</h3><div class="donut" id="dn2"><div id="dnp"></div></div><div class="row" style="justify-content:center;gap:18px;margin-top:14px;font-size:13px"><span><b style="color:var(--a)">●</b> Active</span><span><b style="color:#cfd3df">●</b> Expired</span></div></div></div></section>
+<div class="card"><h3>Active vs expired</h3><div class="donut" id="dn2"><div id="dnp"></div></div><div class="row" style="justify-content:center;gap:18px;margin-top:14px;font-size:13px"><span><b style="color:var(--a)">●</b> Active</span><span><b style="color:#555">●</b> Expired</span></div></div></div></section>
 
 <!-- 11 GHOST -->
 <section id="s11"><div class="card"><div class="row sp" style="flex-wrap:wrap"><div><h3 style="margin:0">👻 Ghost members <span class="pill bd" id="gc"></span></h3><small style="color:var(--m)">AI flags members with no visit in 15–30+ days</small></div><div class="seg" id="gf"><button class="on" data-f="0">All</button><button data-f="15">15+ days</button><button data-f="30">30+ days</button></div></div><div class="tw" style="margin-top:10px"><table><thead><tr><th>Member</th><th>Last visit</th><th>Absent</th><th>Churn risk</th><th>Early joined</th><th></th></tr></thead><tbody id="t11"></tbody></table></div></div></section>
@@ -355,17 +414,53 @@ tr:hover td{background:none}.tw{overflow:visible}
 <div class="mg" id="g13"></div><input type="file" id="fi" accept="image/*" hidden></section>
 <!-- 14 MEMBER PROFILE -->
 <section id="s14"><div class="phone" id="prof"></div></section>
+<!-- 15 BUSINESS -->
+<section id="s15"><div class="grid g2">
+<div class="card"><h3>Owner details</h3>
+<label>Owner name</label><input data-k="o.n"><div class="grid" style="grid-template-columns:1fr 1fr;gap:10px"><div><label>Mobile</label><input data-k="o.m"></div><div><label>Email</label><input data-k="o.e"></div></div>
+<h3 style="margin-top:22px">Business details</h3>
+<label>Business name</label><input data-k="b.n"><label>Tagline</label><input data-k="b.t">
+<div class="grid" style="grid-template-columns:1fr 1fr;gap:10px"><div><label>Udyam / MSME no.</label><input data-k="b.u"></div><div><label>GSTIN</label><input data-k="b.g"></div></div>
+<label>Registered address</label><input data-k="b.a">
+<div class="grid" style="grid-template-columns:1fr 1fr;gap:10px"><div><label>Opening hours (Mon–Sat)</label><input data-k="b.h"></div><div><label>Sunday</label><input data-k="b.s"></div></div>
+<label>UPI ID for payments</label><input data-k="b.up"></div>
+<div class="card"><h3>Social media &amp; online</h3>
+<label>Instagram</label><input data-k="s.i"><label>Facebook</label><input data-k="s.f"><label>YouTube</label><input data-k="s.y"><label>WhatsApp Business</label><input data-k="s.w"><label>Google Maps / Website</label><input data-k="s.g">
+<h3 style="margin-top:22px">Branches</h3>
+<label>Main Road</label><input data-k="br0"><label>City Center</label><input data-k="br1"><label>Highway</label><input data-k="br2">
+<button class="btn" style="width:100%;margin-top:18px" id="bsv">Save changes</button></div></div></section>
+<!-- 16 SCHEDULE -->
+<section id="s16"><div class="seg" id="sd16" style="margin-bottom:14px"></div>
+<div class="grid g2"><div id="cl16"></div><div>
+<div class="card" id="ad16"><h3>Add a class</h3><label style="margin-top:0">Class name</label><input id="acn" placeholder="e.g. Power Yoga">
+<div class="grid" style="grid-template-columns:1fr 1fr;gap:10px"><div><label>Day</label><select id="acd"></select></div><div><label>Time</label><input id="act" type="time" value="18:00"></div></div>
+<div class="grid" style="grid-template-columns:1fr 1fr;gap:10px"><div><label>Trainer</label><select id="actr"></select></div><div><label>Capacity</label><input id="acc" type="number" value="20"></div></div>
+<button class="btn" style="width:100%;margin-top:14px" id="acb">Add</button></div>
+<div class="card" style="margin-top:16px"><h3>Trainer shifts</h3><div id="sh16"></div></div></div></div></section>
+<!-- 17 SOCIAL -->
+<section id="s17"><div class="grid g4" id="sa17" style="margin-bottom:16px"></div>
+<div class="grid g2"><div class="card"><h3>Schedule a post</h3><small style="color:var(--m)">Quick ideas</small><div class="seg" id="id17" style="margin:8px 0 4px"></div>
+<label>Caption</label><textarea id="cap17" placeholder="Write your post…"></textarea>
+<label>Platforms</label><div class="seg" id="pl17"></div>
+<div class="grid" style="grid-template-columns:1fr 1fr;gap:10px"><div><label>Date</label><input id="dt17" type="date"></div><div><label>Time</label><input id="tm17" type="time" value="18:00"></div></div>
+<button class="btn" style="width:100%;margin-top:16px" id="sb17">Schedule post</button></div>
+<div class="card"><h3>Content calendar · next 7 days</h3><div id="cc17"></div><h3 style="margin-top:18px">Scheduled posts</h3><div id="sp17"></div></div></div></section>
+<!-- 18 PLANS -->
+<section id="s18"><div class="grid g4" id="pc18"></div>
+<div class="card" style="margin-top:16px"><h3>🎁 Free perks &amp; accessories</h3><p style="color:var(--m);font-size:13px;margin-bottom:10px">Accessories are free on every plan. Choose the minimum plan for each extra perk.</p>
+<div class="tw"><table><thead><tr><th>Perk</th><th>Included from</th><th>Type</th></tr></thead><tbody id="pk18"></tbody></table></div></div></section>
 </main><div id="mdl"><div class="mp"><button class="mx" id="mx">✕</button><div id="mbody"></div></div></div><div id="toast"></div>
 
 <script>
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
-const titles={1:["Login","Secure gate for owner, staff and trainers"],2:["Add New Member","Owner · create Member ID, username and password"],3:["My Attendance","Member · scan to check in, see your visits"],4:["Workout Plan","Member app · day-wise routine tracker"],5:["Today's Attendance","Reception · live floor view"],6:["Fees Entry Terminal","Reception · collect, receipt, log"],7:["Automated Renewal List","Reception · plans expiring within 7 days"],8:["Assigned Members","Trainer · your clients and goals"],9:["Diet Plan Creator","Trainer · meals and macros"],10:["Executive Daily Report","Owner · today at a glance"],11:["Ghost Members Analytics","Owner · churn early-warning"],12:["Members Directory","Owner · every member's profile, plan and attendance"],13:["Gym Equipment","Owner · every machine, photo and service status"],14:["My Profile","Member · plan, visits and today's workout"]};
+let curS=1,LANG='en';try{LANG=localStorage.getItem('ip_lang')||'en'}catch(e){}
+const titles={1:["Login","Secure gate for owner, staff and trainers"],2:["Add New Member","Owner · create Member ID, username and password"],3:["My Attendance","Member · scan to check in, see your visits"],4:["Workout Plan","Member app · day-wise routine tracker"],5:["Today's Attendance","Reception · live floor view"],6:["Fees Entry Terminal","Reception · collect, receipt, log"],7:["Automated Renewal List","Reception · plans expiring within 7 days"],8:["Assigned Members","Trainer · your clients and goals"],9:["Diet Plan Creator","Trainer · meals and macros"],10:["Executive Daily Report","Owner · today at a glance"],11:["Ghost Members Analytics","Owner · churn early-warning"],12:["Members Directory","Owner · every member's profile, plan and attendance"],13:["Gym Equipment","Owner · every machine, photo and service status"],14:["My Profile","Member · plan, visits and today's workout"],15:["Business Profile","Owner · your details, business and branches"],16:["Class Schedule","Gym · timetable, bookings and trainer shifts"],17:["Social Media","Owner · accounts, content and post scheduler"],18:["Membership Plans","Owner · pricing and free perks per plan"]};
 const toast=m=>{const d=document.createElement('div');d.textContent=m;$('#toast').append(d);setTimeout(()=>d.remove(),3000)};
 const now=()=>new Date().toLocaleTimeString('en-IN',{hour:'2-digit',minute:'2-digit'});
 const inr=n=>n.toLocaleString('en-IN');
-function go(n){if(sess?!allowed.has(n):n!=1){toast('🔒 Ye screen is login me nahi hai');return}$$('section').forEach(s=>s.classList.remove('on'));$('#s'+n).classList.add('on');setNav(n);$('#ttl').textContent=titles[n][0];$('#sub').textContent=titles[n][1];({2:r2,3:r3,5:r5,6:r6,7:r7,9:r9,10:r10c,11:r11,12:r12,13:r13,14:r14}[n]||(()=>{}))();scrollTo(0,0)}
+function go(n){if(sess?!allowed.has(n):n!=1){toast('🔒 Ye screen is login me nahi hai');return}curS=n;$$('section').forEach(s=>s.classList.remove('on'));$('#s'+n).classList.add('on');setNav(n);$('#ttl').textContent=titles[n][0];$('#sub').textContent=titles[n][1];({2:r2,3:r3,5:r5,6:r6,7:r7,9:r9,10:r10c,11:r11,12:r12,13:r13,14:r14,15:r15,16:r16,17:r17,18:r18}[n]||(()=>{}))();scrollTo(0,0)}
 let items=[],sess=null,allowed=new Set();
-const G={owner:[["📊","Dashboard",[10,11]],["👥","Members",[12,2]],["🏋️","Equipment",[13]],["🧾","Reception",[5,6,7]],["🎯","Trainer",[8,9]]],staff:[["📋","Attendance",[5]],["💳","Fees",[6]],["🔔","Renewals",[7]]],trainer:[["👥","Members",[8]],["🥗","Diet",[9]]],member:[["👤","Profile",[14]],["📷","Attendance",[3]],["💪","Workout",[4]]]};
+const G={owner:[["📊","Dashboard",[10,11]],["👥","Members",[12,2,18]],["🏋️","Gym",[13,16]],["💼","Business",[15,17]],["🧾","Team",[5,6,7,8,9]]],staff:[["📋","Attendance",[5]],["💳","Fees",[6]],["🔔","Renewals",[7]],["📅","Schedule",[16]]],trainer:[["👥","Members",[8]],["🥗","Diet",[9]],["📅","Schedule",[16]]],member:[["👤","Profile",[14]],["📷","Attendance",[3]],["💪","Workout",[4]],["📅","Classes",[16]]]};
 const HOME={owner:10,staff:5,trainer:8,member:14};
 function buildDock(){const d=$('#dock');d.style.setProperty('--n',items.length+1);d.innerHTML='<i class="ind"></i>'+items.map((x,i)=>`<button data-i="${i}"><b>${x[0]}</b>${x[1]}</button>`).join('')+'<button data-i="x"><b>🚪</b>Logout</button>';$$('#dock button').forEach(b=>b.onclick=()=>b.dataset.i=='x'?logout():go(items[+b.dataset.i][2][0]))}
 function setNav(n){const mi=items.findIndex(m=>m[2].includes(n));const d=$('#dock');d.style.setProperty('--i',Math.max(mi,0));const ind=d.querySelector('.ind');if(ind)ind.style.opacity=mi<0?0:1;$$('#dock button').forEach((b,i)=>b.classList.toggle('on',i==mi));const sn=$('#subnav');if(mi>=0&&items[mi][2].length>1){sn.innerHTML=items[mi][2].map(k=>`<button class="${k==n?'on':''}" data-k="${k}">${k}. ${titles[k][0]}</button>`).join('');sn.style.display='flex';$$('#subnav button').forEach(b=>b.onclick=()=>go(+b.dataset.k))}else sn.style.display='none';tick()}
@@ -375,7 +470,7 @@ function cu(el,ms=900){const to=parseInt(el.textContent.replace(/,/g,''))||0,t0=
 
 // DATA
 const D=864e5,P=[["1 Month",1200,1],["3 Months",3500,3],["6 Months",6000,6],["12 Months",9500,12]],BR=["Main Road","City Center","Highway"],TR=["Vikram","Sana","Rahul"],GL=["Fat loss","Muscle gain","Strength","General fitness"];
-const t0=()=>{const d=new Date();d.setHours(0,0,0,0);return d},addD=(d,n)=>new Date(d.getTime()+n*D),ymd=d=>d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0'),pd=x=>new Date(x+'T00:00:00'),fd=x=>pd(x).toLocaleDateString('en-IN',{day:'numeric',month:'short',year:'numeric'});
+const t0=()=>{const d=new Date();d.setHours(0,0,0,0);return d},addD=(d,n)=>new Date(d.getTime()+n*D),ymd=d=>d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0'),pd=x=>new Date(x+'T00:00:00'),fd=x=>pd(x).toLocaleDateString(({hi:'hi-IN',mr:'mr-IN'})[LANG]||'en-IN',{day:'numeric',month:'short',year:'numeric'});
 const left=o=>Math.round((pd(o.expiry)-t0())/D),stat=o=>{const l=left(o);return l<0?'Expired':l<=7?'Expiring':'Active'};
 const strk=o=>{const v=new Set(o.visits);let d=t0(),n=0;if(!v.has(ymd(d)))d=addD(d,-1);while(v.has(ymd(d))){n++;d=addD(d,-1)}return n};
 const last=o=>o.visits.length?o.visits.reduce((a,b)=>a>b?a:b):null,cnt=(o,n)=>o.visits.filter(v=>(t0()-pd(v))/D<n).length;
@@ -405,6 +500,10 @@ ghosts=members.filter(m=>stat(m.o)!='Expired').map(m=>{const l=last(m.o),g=l?Mat
 const clients=[["Aarav Mehta","Muscle gain",2400,"Hypertrophy · 5d/wk"],["Priya Nair","Fat loss",1700,"HIIT + Strength · 4d/wk"],["Rohit Sharma","Strength",2800,"Powerlifting · 4d/wk"],["Sneha Kulkarni","General fitness",1900,"Full body · 3d/wk"],["Karan Deshmukh","Fat loss",2100,"Cut phase · 5d/wk"],["Neha Joshi","Muscle gain",2000,"Push/Pull/Legs · 6d/wk"]];
 function cal(o){const t=new Date(),y=t.getFullYear(),m=t.getMonth(),dim=new Date(y,m+1,0).getDate(),off=(new Date(y,m,1).getDay()+6)%7,v=new Set(o.visits);let h='<div class="cal">'+['M','T','W','T','F','S','S'].map(d=>`<small>${d}</small>`).join('');for(let i=0;i<off;i++)h+='<i></i>';for(let d=1;d<=dim;d++){const c=(v.has(ymd(new Date(y,m,d)))?'v ':'')+(d==t.getDate()?'t ':'')+(d>t.getDate()?'f':'');h+=`<i class="${c}">${d}</i>`}return h+'</div>'}
 let me=null;
+try{JSON.parse(localStorage.getItem('ip_pp3')||'[]').forEach((v,i)=>{if(v>0)P[i][1]=v})}catch(e){}
+const PK=[["🧺","Gym towel & water",0],["🥤","Protein shaker bottle",0],["🏋️","Lifting straps & belt",0],["🪢","Resistance bands set",0],["🔐","Smart locker",0],["🥗","Personalised diet plan",1],["📊","InBody body scan",1],["🧘","Group classes (Zumba, Yoga, HIIT)",1],["♨️","Steam & sauna",2],["⌚","Smart fitness band",2],["💪","Free PT sessions",2],["🧊","Ice-bath recovery zone",3],["🎟","Guest passes",3]];
+try{(JSON.parse(localStorage.getItem('ip_pk3')||'null')||[]).forEach((v,i)=>{if(PK[i]&&v>=0)PK[i][2]=v})}catch(e){}
+const perks=i=>PK.filter(p=>p[2]<=Math.max(0,i)),pks=i=>perks(i).map(k=>`<span class="pk"><i>${k[0]}</i>${k[1]}</span>`).join('');
 
 // 1 LOGIN
 function r10c(){r10();['#k10r','#k10c','#k10a','#k10e'].forEach(q=>cu($(q)))}
@@ -421,7 +520,7 @@ const lc=$('#lcard');$('#s1').addEventListener('mousemove',e=>{const r=lc.getBou
 
 // 2 ADD MEMBER (owner only)
 const plans=P.map((p,i)=>[p[0],p[1],["Try us out","Most popular","Save 17%","Best value"][i]]);let pl=1;
-function rPlans(){$('#plans').innerHTML=plans.map((p,i)=>`<div class="plan ${i==pl?'on':''}" data-i="${i}"><div><b style="color:var(--t);font-size:15px">${p[0]}</b><br><small style="color:var(--m)">${p[2]}</small></div><b>₹${inr(p[1])}</b></div>`).join('');$$('.plan').forEach(e=>e.onclick=()=>{pl=+e.dataset.i;$('#jamt').value=plans[pl][1];rPlans()})}
+function rPlans(){$('#plans').innerHTML=plans.map((p,i)=>`<div class="plan ${i==pl?'on':''}" data-i="${i}"><div><b style="color:var(--t);font-size:15px">${p[0]}</b><br><small style="color:var(--m)">${p[2]} · 🎁 ${perks(i).length} perks</small></div><b>₹${inr(p[1])}</b></div>`).join('');$$('.plan').forEach(e=>e.onclick=()=>{pl=+e.dataset.i;$('#jamt').value=plans[pl][1];rPlans()})}
 function r2(){rPlans();$('#jbr').innerHTML=BR.map(b=>`<option>${b}</option>`).join('');$('#jtr').innerHTML=TR.map(b=>`<option>${b}</option>`).join('');if(!$('#jamt').value)$('#jamt').value=plans[pl][1]}
 function pwd(){const c='abcdefghjkmnpqrstuvwxyz23456789';let s='';for(let i=0;i<7;i++)s+=c[Math.floor(Math.random()*c.length)];return s}
 function cred(o){const msg=`Welcome to IronPulse 💪\nMember ID: ${o.id}\nUsername: ${o.user}\nPassword: ${o.pass}\nLogin on the member app and start your streak!`;
@@ -487,7 +586,7 @@ $('#dsel').onchange=e=>{cur=+e.target.value;r9()};$('#dsv').onclick=()=>toast('D
 function r10(){counts();const rev=revBase+pays.reduce((s,p)=>s+p.a,0),act=totalActive,ins=att.length;$('#k10r').textContent=inr(rev);$('#k10c').textContent=ins;$('#k10t').textContent=act;$('#k10a').textContent=act;$('#k10e').textContent=expired;$('#k10m').textContent=members.length;$('#k10n').textContent=members.filter(m=>(t0()-pd(m.o.join))/D<=30).length;$('#k10q').textContent=machines.length;
 const d=[["Mon",14200],["Tue",11800],["Wed",16500],["Thu",13100],["Fri",18900],["Sat",15400],["Today",rev]],mx=Math.max(...d.map(x=>x[1]));
 $('#ch').innerHTML=d.map(x=>`<div title="₹${inr(x[1])}"><span>${(x[1]/1000).toFixed(1)}k</span><i style="height:${x[1]/mx*78}%"></i>${x[0]}</div>`).join('');
-const pc=Math.round(act/(act+expired)*100);$('#dn2').style.background=`conic-gradient(var(--a) 0 ${pc}%,#e3e5ee 0)`;$('#dnp').textContent=pc+'%'}
+const pc=Math.round(act/(act+expired)*100);$('#dn2').style.background=`conic-gradient(var(--a) 0 ${pc}%,#34363e 0)`;$('#dnp').textContent=pc+'%'}
 
 // 11 GHOST
 let gf=0;
@@ -504,7 +603,7 @@ $('#prof').innerHTML=`<div class="row" style="gap:14px"><div class="av" style="w
 <div class="card" style="margin-top:16px;padding:14px"><div class="row sp"><small style="color:var(--m)">${l>=0?'Plan ends '+fd(o.expiry):'Plan ended '+fd(o.expiry)}</small><b style="color:var(--a)">${l>=0?l+' days left':'Renew now'}</b></div><div class="bar" style="margin-top:10px"><i style="width:${pct}%"></i></div><small style="color:var(--m)">${pct}% of plan used</small></div>
 <div class="st2" style="margin-top:12px"><div><small>Joined on</small><b style="font-size:15px">${fd(o.join)}</b></div><div><small>Total visits</small><b>${o.visits.length} days</b></div><div><small>This month</small><b>${o.visits.filter(v=>v.startsWith(mo)).length} days</b></div><div><small>Streak</small><b>🔥 ${strk(o)}</b></div></div>
 <div class="card" style="margin-top:12px;padding:14px"><small style="color:var(--m)">Today's workout</small><div class="row sp"><b style="font-size:17px">${w[0]}</b><button class="btn s" id="pw4">Start</button></div><small style="color:var(--m)">${w[1].length} exercises</small></div>
-<div class="card" style="margin-top:12px;padding:6px 14px">${kv([['Mobile',o.mobile],['Branch',o.branch],['Trainer',o.trainer],['Goal',o.goal]])}</div>`;$('#pw4').onclick=()=>go(4)}
+<div class="card" style="margin-top:12px;padding:6px 14px">${kv([['Mobile',o.mobile],['Branch',o.branch],['Trainer',o.trainer],['Goal',o.goal]])}</div><div class="card" style="margin-top:12px;padding:14px"><b>🎁 Your free perks</b><div class="pks" style="margin-top:10px">${pks(P.findIndex(p=>p[0]==o.plan))}</div></div>`;$('#pw4').onclick=()=>go(4)}
 
 // 12 MEMBERS DIRECTORY + PROFILE MODAL
 let q12='',b12='',s12='';
@@ -529,7 +628,7 @@ $('#mx').onclick=()=>$('#mdl').classList.remove('on');$('#mdl').onclick=e=>{if(e
 
 // 13 EQUIPMENT
 const MG={tm:'<path d="M10 74h68M78 74L68 30M60 28h18M68 30L38 44"/><circle cx="14" cy="74" r="4"/><circle cx="74" cy="74" r="4"/>',bike:'<path d="M28 80h40M48 80V50M48 50L34 36h-8M48 50l14-10h10"/><circle cx="64" cy="62" r="12"/>',rower:'<path d="M8 68h84M66 68V56"/><rect x="30" y="58" width="14" height="6" rx="3"/><circle cx="80" cy="50" r="14"/><path d="M80 50L48 58"/>',elli:'<path d="M16 80h58M70 80V24M62 24h16M22 80L40 50 54 80M40 50L66 34"/>',bench:'<rect x="14" y="48" width="56" height="10" rx="5"/><path d="M70 52L86 38M24 58v20M60 58v20M12 78h22M50 78h22"/>',cable:'<path d="M18 82V16h64v66"/><circle cx="18" cy="28" r="4"/><circle cx="82" cy="28" r="4"/><path d="M18 28L34 62M82 28L66 62M28 62h12M60 62h12"/><rect x="44" y="28" width="12" height="36" rx="2"/>',press:'<path d="M20 82h60M30 82V26M70 82V44M30 44H12M70 44h16"/><rect x="38" y="58" width="24" height="9" rx="3"/>',legp:'<path d="M10 80h82M18 80L68 34M68 34h16M32 60h20v10H32z"/><circle cx="76" cy="26" r="4"/>',lat:'<path d="M22 82V14h42M64 14v12M30 28h42M52 28V44M46 74h28M70 58h10"/><rect x="42" y="64" width="20" height="8" rx="3"/>',db:'<path d="M32 50h36"/><rect x="20" y="34" width="10" height="32" rx="3"/><rect x="70" y="34" width="10" height="32" rx="3"/><rect x="12" y="42" width="8" height="16" rx="2"/><rect x="80" y="42" width="8" height="16" rx="2"/>',bb:'<path d="M6 50h88"/><rect x="20" y="26" width="9" height="48" rx="3"/><rect x="71" y="26" width="9" height="48" rx="3"/><rect x="31" y="34" width="6" height="32" rx="2"/><rect x="63" y="34" width="6" height="32" rx="2"/>',kb:'<circle cx="50" cy="62" r="22"/><path d="M36 46C36 18 64 18 64 46"/>',rack:'<path d="M24 86V12M76 86V12M24 30H12M76 30h12M24 58h-8M76 58h8M8 40h84"/><rect x="10" y="30" width="6" height="20" rx="2"/><rect x="84" y="30" width="6" height="20" rx="2"/>',pull:'<path d="M20 86V18M80 86V18M12 18h76M36 18v12M64 18v12"/>',plates:'<circle cx="38" cy="58" r="24"/><circle cx="38" cy="58" r="10"/><circle cx="68" cy="50" r="18"/><circle cx="68" cy="50" r="7"/>',smith:'<path d="M22 86V10M78 86V10M22 10h56M10 40h80"/><rect x="12" y="32" width="8" height="16" rx="2"/><rect x="80" y="32" width="8" height="16" rx="2"/>'};
-const CATS=["Cardio","Chest","Back","Legs","Shoulders & Arms","Free Weights","Core & Functional"],GR=["#ffe0d4,#ffc2a8","#ffe9b8,#ffd37a","#d6ecff,#a9d2ff","#d8f5e3,#a6e6c0","#f1dcff,#d9b3ff","#ffd9e6,#ffb3cc","#dfe4ef,#bcc6dc"],CG=['tm','bench','lat','legp','press','db','cable'];
+const CATS=["Cardio","Chest","Back","Legs","Shoulders & Arms","Free Weights","Core & Functional"],GR=["#3b2218,#2a1812","#3a3018,#2a2212","#18283b,#121c2a","#173326,#11261c","#2c1d3b,#201529","#3b1d2b,#2a1520","#2a2d38,#1f222b"],CG=['tm','bench','lat','legp','press','db','cable'];
 const RAW=`Treadmill TX-900|0|tm|6
 Incline Treadmill Pro|0|tm|2
 Curved Manual Treadmill|0|tm|1
@@ -602,8 +701,422 @@ $('#q13').oninput=e=>{q13=e.target.value.toLowerCase();r13()};$('#b13').onchange
 $('#fi').onchange=e=>{const f=e.target.files[0];if(!f)return;const rd=new FileReader();rd.onload=()=>{const im=new Image();im.onload=()=>{const k=Math.min(1,520/Math.max(im.width,im.height)),c=document.createElement('canvas');c.width=im.width*k;c.height=im.height*k;c.getContext('2d').drawImage(im,0,0,c.width,c.height);mph[upId]=c.toDataURL('image/jpeg',.72);try{localStorage.setItem('ip_mph3',JSON.stringify(mph))}catch(x){toast('Photo saved for this session only')}r13();toast('📷 Photo updated')};im.src=rd.result};rd.readAsDataURL(f);e.target.value=''};
 $('#am').onclick=()=>{const n=$('#an').value.trim();if(!n)return toast('Machine ka naam daalo');const c=+$('#ac').value;machines.unshift({id:'X'+Date.now(),name:n,cat:c,g:CG[c],qty:1,branch:$('#ab').value,st:'Working',svc:ymd(t0()),custom:1});try{localStorage.setItem('ip_mx3',JSON.stringify(machines.filter(x=>x.custom)))}catch(e){}$('#an').value='';r13();toast('Machine added — tap 📷 to add its photo')};
 
+// 15 BUSINESS
+const BZ=Object.assign({'o.n':'Rahul Deshmukh','o.m':'9890012345','o.e':'owner@ironpulse.fit','b.n':'IronPulse Fitness','b.t':'Train hard. Track smart.','b.u':'UDYAM-MH-00-1234567','b.g':'27ABCDE1234F1Z5','b.a':'Plot 12, Main Road, Maharashtra','b.h':'5:30 AM – 10:30 PM','b.s':'7:00 AM – 12:00 PM','b.up':'ironpulse@upi','s.i':'@ironpulse.fit','s.f':'facebook.com/ironpulsefit','s.y':'youtube.com/@ironpulsefit','s.w':'+91 98900 12345','s.g':'www.ironpulse.fit','br0':'Plot 12, Main Road','br1':'Shop 4, Mall Road, City Center','br2':'NH-52, Near Toll Naka'},(()=>{try{return JSON.parse(localStorage.getItem('ip_bz3')||'{}')}catch(e){return{}}})());
+function r15(){$$('#s15 [data-k]').forEach(i=>i.value=BZ[i.dataset.k]||'')}
+$('#bsv').onclick=()=>{$$('#s15 [data-k]').forEach(i=>BZ[i.dataset.k]=i.value.trim());try{localStorage.setItem('ip_bz3',JSON.stringify(BZ))}catch(e){}toast('Business details saved ✓')};
+
+// 16 SCHEDULE
+const DAYS=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'],SH=[["Vikram",6,14,"Sun"],["Sana",14,22,"Wed"],["Rahul",10,18,"Mon"]];
+const CL0=`Mon|06:00|HIIT Burn|Vikram|45|20|14
+Mon|07:30|Yoga Flow|Sana|60|18|11
+Mon|18:30|Strength Lab|Rahul|60|16|15
+Tue|06:00|Zumba Dance|Sana|45|25|20
+Tue|18:00|CrossFit WOD|Vikram|60|14|14
+Tue|19:30|Core & Abs|Rahul|30|20|9
+Wed|06:30|Spin Cycle|Rahul|45|18|12
+Wed|18:00|Boxing Cardio|Vikram|50|16|10
+Wed|19:30|Yoga Flow|Sana|60|18|8
+Thu|06:00|HIIT Burn|Vikram|45|20|13
+Thu|18:30|Functional Training|Rahul|60|16|9
+Thu|19:45|Zumba Dance|Sana|45|25|17
+Fri|06:00|Spin Cycle|Rahul|45|18|16
+Fri|18:00|CrossFit WOD|Vikram|60|14|11
+Fri|19:30|Stretch & Recovery|Sana|30|20|6
+Sat|07:00|Bootcamp|Vikram|60|25|21
+Sat|09:00|Yoga Flow|Sana|60|18|12
+Sat|17:00|Strength Lab|Rahul|60|16|8
+Sun|08:00|Run Club|Rahul|60|30|18
+Sun|09:30|Meditation|Sana|30|20|7`.split('\n').map(l=>{const a=l.split('|');return{id:a[0]+a[1],d:a[0],t:a[1],n:a[2],tr:a[3],du:+a[4],cap:+a[5],bk:+a[6]}});
+let CLX=[];try{CLX=JSON.parse(localStorage.getItem('ip_cl3')||'[]')}catch(e){}
+const saveCL=()=>{try{localStorage.setItem('ip_cl3',JSON.stringify(CLX))}catch(e){}};
+let sd16=TK();
+const tm12=t=>{const[h,m]=t.split(':').map(Number);return[(h%12||12)+':'+String(m).padStart(2,'0'),h<12?'AM':'PM']};
+$('#acd').innerHTML=DAYS.map(d=>`<option>${d}</option>`).join('');$('#actr').innerHTML=TR.map(d=>`<option>${d}</option>`).join('');
+function r16(){const can=sess=='owner'||sess=='trainer',mem=sess=='member'&&me;
+$('#sd16').innerHTML=DAYS.map(d=>`<button class="${d==sd16?'on':''}" data-d="${d}">${d}</button>`).join('');
+$$('#sd16 button').forEach(b=>b.onclick=()=>{sd16=b.dataset.d;r16()});
+const L=CL0.concat(CLX).filter(c=>c.d==sd16).sort((a,b)=>a.t<b.t?-1:1);
+$('#cl16').innerHTML=L.map(c=>{const bk=mem&&(me.o.book||[]).includes(c.id),tk=c.bk+(bk?1:0),lf=c.cap-tk,full=lf<=0&&!bk,t=tm12(c.t);
+return `<div class="cls"><div class="ct">${t[0]}<small>${t[1]}</small></div><div class="ci"><b>${c.n}</b><small>Coach ${c.tr} · ${c.du} min</small><div class="bar"><i style="width:${Math.min(100,tk/c.cap*100)}%"></i></div><small>${full?'Full':lf+' spots left'}</small></div>${mem?`<button class="btn s ${bk?'gh':''}" data-b="${c.id}" ${full?'disabled':''}>${bk?'Booked ✓':'Book'}</button>`:''}${can&&c.x?`<button class="btn s gh" data-r="${c.id}">✕</button>`:''}</div>`}).join('')||'<div class="card"><small>No classes on this day.</small></div>';
+$$('[data-b]').forEach(b=>b.onclick=()=>{const o=me.o;o.book=o.book||[];const i=o.book.indexOf(b.dataset.b);if(i<0){o.book.push(b.dataset.b);toast('Class booked ✓')}else{o.book.splice(i,1);toast('Booking cancelled')}save();r16()});
+$$('[data-r]').forEach(b=>b.onclick=()=>{CLX=CLX.filter(c=>c.id!=b.dataset.r);saveCL();r16()});
+$('#ad16').style.display=can?'block':'none';
+$('#sh16').innerHTML=SH.map(x=>{const h=new Date().getHours(),on=h>=x[1]&&h<x[2]&&TK()!=x[3],a=tm12(x[1]+':00'),z=tm12(x[2]+':00');return `<div class="kv"><span>${x[0]} · ${a[0]} ${a[1]} – ${z[0]} ${z[1]}</span><span class="pill ${on?'ok':'wn'}">${on?'On duty':'Off now'}</span></div>`}).join('')}
+$('#acb').onclick=()=>{const n=$('#acn').value.trim();if(!n)return toast('Enter the class name');CLX.push({id:'X'+Date.now(),d:$('#acd').value,t:$('#act').value||'18:00',n,tr:$('#actr').value,du:45,cap:+$('#acc').value||20,bk:0,x:1});saveCL();sd16=$('#acd').value;$('#acn').value='';toast('Class added ✓');r16()};
+
+// 17 SOCIAL
+let SP=null;try{SP=JSON.parse(localStorage.getItem('ip_sp3')||'null')}catch(e){}
+if(!SP){const d=n=>ymd(addD(t0(),n));SP=[{id:'p1',c:'Weekend Bootcamp starts Saturday 7 AM — book your spot! 💪 #IronPulse',p:['Instagram','Facebook'],d:d(1),t:'18:00'},{id:'p2',c:'Monday motivation: consistency beats intensity. Show up. 🔥',p:['Instagram'],d:d(2),t:'07:00'},{id:'p3',c:'Offer: 12 months at ₹9,500 + free accessories kit 🎁 Limited seats!',p:['Instagram','Facebook','WhatsApp'],d:d(4),t:'12:00'},{id:'p4',c:'Thank you for 500+ reviews! ⭐ Your support keeps us going.',p:['Google'],d:d(-2),t:'10:00'}]}
+const saveSP=()=>{try{localStorage.setItem('ip_sp3',JSON.stringify(SP))}catch(e){}};
+const AC=[['📸','Instagram','s.i','12.4K','followers'],['👍','Facebook','s.f','5.8K','followers'],['▶️','YouTube','s.y','2.1K','subscribers'],['💬','WhatsApp','s.w','640','broadcast contacts'],['⭐','Google','s.g','4.7★','238 reviews']];
+const PLT=['Instagram','Facebook','YouTube','WhatsApp','Google'],IDEAS=[['🏆 Member of the month','🏆 Member of the month: our member lost 8 kg in 12 weeks! Consistency wins. #IronPulse #Transformation'],['🔥 Offer','🔥 Limited offer: 6 months at ₹6,000 + free accessories kit (towel, shaker, straps & bands). Join today!'],['💡 Workout tip','💡 Tip: train your back twice a week for better posture and strength. Save this post!'],['🆕 New machine','🆕 New arrival! Our plate-loaded hack squat is now live at the Main Road branch.']];let selP=['Instagram'];
+function r17(){$('#sa17').innerHTML=AC.map(a=>`<div class="card kpi"><small>${a[0]} ${a[1]}</small><big style="font-size:26px">${a[3]}</big><em style="color:var(--m)">${a[4]}</em><div class="hd">${BZ[a[2]]||'—'}</div></div>`).join('');
+$('#id17').innerHTML=IDEAS.map((x,i)=>`<button data-i="${i}">${x[0]}</button>`).join('');$$('#id17 button').forEach(b=>b.onclick=()=>{$('#cap17').value=IDEAS[+b.dataset.i][1]});
+$('#pl17').innerHTML=PLT.map(p=>`<button class="${selP.includes(p)?'on':''}" data-p="${p}">${p}</button>`).join('');$$('#pl17 button').forEach(b=>b.onclick=()=>{const p=b.dataset.p,i=selP.indexOf(p);if(i<0)selP.push(p);else selP.splice(i,1);b.classList.toggle('on')});
+if(!$('#dt17').value)$('#dt17').value=ymd(addD(t0(),1));
+$('#cc17').innerHTML=[0,1,2,3,4,5,6].map(i=>{const d=addD(t0(),i),n=SP.filter(p=>p.d==ymd(d)).length;return `<div class="${n?'has':''}"><small>${DAYS[(d.getDay()+6)%7]}</small><b>${d.getDate()}</b><small>${n?n+' post'+(n>1?'s':''):'—'}</small></div>`}).join('');
+$('#sp17').innerHTML=SP.slice().sort((a,b)=>a.d+a.t<b.d+b.t?-1:1).map(p=>{const t=tm12(p.t),done=new Date(p.d+'T'+p.t)<new Date();return `<div class="post"><p>${p.c}</p><div class="row sp" style="flex-wrap:wrap;gap:8px"><small style="color:var(--m)">${fd(p.d)} · ${t[0]} ${t[1]}</small><span>${p.p.map(x=>`<span class="pill or">${x}</span>`).join(' ')} <span class="pill ${done?'ok':'wn'}">${done?'Posted':'Scheduled'}</span> <button class="btn s gh" data-x="${p.id}">✕</button></span></div></div>`}).join('');
+$$('[data-x]').forEach(b=>b.onclick=()=>{SP=SP.filter(p=>p.id!=b.dataset.x);saveSP();r17()})}
+$('#sb17').onclick=()=>{const c=$('#cap17').value.trim();if(!c||!selP.length)return toast('Write a caption and pick a platform');SP.push({id:'p'+Date.now(),c,p:selP.slice(),d:$('#dt17').value||ymd(addD(t0(),1)),t:$('#tm17').value||'18:00'});saveSP();$('#cap17').value='';toast('Post scheduled ✓');r17()};
+
+// 18 PLANS
+function r18(){$('#pc18').innerHTML=P.map((p,i)=>`<div class="card"><div class="row sp"><b>${p[0]}</b><span class="pill or">${members.filter(m=>m.o.plan==p[0]).length} members</span></div><div class="row" style="margin:12px 0;gap:8px"><span style="font-size:20px;color:var(--a)">₹</span><input type="number" data-p="${i}" value="${p[1]}"></div><div class="pks">${pks(i)}</div></div>`).join('');
+$$('[data-p]').forEach(e=>e.onchange=()=>{const v=+e.value,i=+e.dataset.p;if(v>0){P[i][1]=v;plans[i][1]=v;try{localStorage.setItem('ip_pp3',JSON.stringify(P.map(x=>x[1])))}catch(x){}toast('Price updated ✓')}});
+$('#pk18').innerHTML=PK.map((k,i)=>`<tr><td><span class="pk"><i>${k[0]}</i>${k[1]}</span></td><td><select data-k="${i}">${P.map((p,j)=>`<option value="${j}" ${j==k[2]?'selected':''}>${p[0]}</option>`).join('')}</select></td><td><span class="pill ${k[2]==0?'ok':'or'}">${k[2]==0?'Free accessory':'Extra perk'}</span></td></tr>`).join('');
+$$('#pk18 select').forEach(x=>x.onchange=()=>{PK[+x.dataset.k][2]=+x.value;try{localStorage.setItem('ip_pk3',JSON.stringify(PK.map(y=>y[2])))}catch(e){}r18()})}
+
 function lab(){$$('table').forEach(t=>{const h=[...t.querySelectorAll('th')].map(x=>x.textContent);t.querySelectorAll('tbody tr').forEach(r=>[...r.children].forEach((c,i)=>c.dataset.l=h[i]||''))})}
 $$('tbody').forEach(b=>new MutationObserver(lab).observe(b,{childList:true}));
 setInterval(()=>{if(sess!=='owner'&&sess!=='staff')return;const out=members.filter(m=>!att.find(a=>a.n==m[0]&&!a.o));if(!out.length)return;const m=out[Math.floor(Math.random()*out.length)];att.push({n:m[0],p:m[1],i:now(),o:null});addVisit(m);toast('🟢 '+m[0]+' abhi check-in hua');tick();if($('#s5').classList.contains('on'))r5();if($('#s10').classList.contains('on'))r10()},9000);
+// ===== I18N =====
+const DL=`Live demo||Live demo|लाइव डेमो|लाइव्ह डेमो
+Signed in as||Login:|इस रूप में लॉगिन|म्हणून लॉगिन
+Guest||Guest|अतिथि|पाहुणा
+Owner||Owner|मालिक|मालक
+Staff||Staff|स्टाफ|कर्मचारी
+Trainer||Trainer|ट्रेनर|ट्रेनर
+Member||Member|सदस्य|सदस्य
+Dashboard||Dashboard|डैशबोर्ड|डॅशबोर्ड
+Members||Members|सदस्य|सदस्य
+Gym||Gym|जिम|जिम
+Business||Business|व्यवसाय|व्यवसाय
+Team||Team|टीम|टीम
+Logout||Logout|लॉगआउट|लॉगआउट
+Profile||Profile|प्रोफ़ाइल|प्रोफाइल
+Attendance||Attendance|उपस्थिति|उपस्थिती
+Workout||Workout|वर्कआउट|वर्कआउट
+Classes||Classes|क्लासेस|क्लासेस
+Schedule||Schedule|शेड्यूल|वेळापत्रक
+Plans||Plans|प्लान|प्लॅन्स
+Fees||Fees|फीस|फी
+Renewals||Renewals|रिन्यूअल|रिन्यूअल
+Diet||Diet|डाइट|डाएट
+Login||Login|लॉगिन|लॉगिन
+Secure gate for owner, staff and trainers||Owner, staff aur trainers ke liye secure gate|मालिक, स्टाफ और ट्रेनर के लिए सुरक्षित प्रवेश|मालक, कर्मचारी आणि ट्रेनरसाठी सुरक्षित प्रवेश
+Add New Member||Naya member jodein|नया सदस्य जोड़ें|नवीन सदस्य जोडा
+create Member ID, username and password||Member ID, username aur password banayein|मेंबर ID, यूज़रनेम और पासवर्ड बनाएं|सदस्य ID, युजरनेम आणि पासवर्ड तयार करा
+My Attendance||Meri attendance|मेरी उपस्थिति|माझी उपस्थिती
+scan to check in, see your visits||Scan karke check-in karein, apne visits dekhein|स्कैन करके चेक-इन करें, अपनी विज़िट देखें|स्कॅन करून चेक-इन करा, तुमच्या भेटी पहा
+Workout Plan||Workout Plan|वर्कआउट प्लान|वर्कआउट प्लॅन
+Member app||Member app|सदस्य ऐप|सदस्य ॲप
+day-wise routine tracker||din ke hisaab se routine tracker|दिन के अनुसार रूटीन ट्रैकर|दिवसानुसार रूटीन ट्रॅकर
+Today's Attendance||Aaj ki attendance|आज की उपस्थिति|आजची उपस्थिती
+live floor view||live floor view|लाइव फ्लोर व्यू|लाइव्ह फ्लोअर व्ह्यू
+Fees Entry Terminal||Fees Entry Terminal|फीस एंट्री टर्मिनल|फी एंट्री टर्मिनल
+collect, receipt, log||collect, receipt, log|वसूली, रसीद, लॉग|वसुली, पावती, लॉग
+Automated Renewal List||Automatic Renewal List|ऑटोमैटिक रिन्यूअल लिस्ट|ऑटोमॅटिक रिन्यूअल यादी
+plans expiring within 7 days||7 din me khatam hone wale plans|7 दिन में खत्म होने वाले प्लान|7 दिवसांत संपणारे प्लॅन्स
+Plans expiring within 7 days||7 din me khatam hone wale plans|7 दिन में खत्म होने वाले प्लान|7 दिवसांत संपणारे प्लॅन्स
+Assigned Members||Assigned Members|असाइन किए गए सदस्य|नेमून दिलेले सदस्य
+your clients and goals||aapke clients aur goals|आपके क्लाइंट और लक्ष्य|तुमचे क्लायंट आणि ध्येये
+Diet Plan Creator||Diet Plan Creator|डाइट प्लान क्रिएटर|डाएट प्लॅन क्रिएटर
+meals and macros||meals aur macros|भोजन और मैक्रोज़|जेवण आणि मॅक्रोज
+Executive Daily Report||Executive Daily Report|एग्जीक्यूटिव डेली रिपोर्ट|एक्झिक्युटिव्ह डेली रिपोर्ट
+today at a glance||aaj ek nazar me|आज एक नज़र में|आज एका दृष्टिक्षेपात
+Ghost Members Analytics||Ghost Members Analytics|गायब सदस्य एनालिटिक्स|गायब सदस्य ॲनालिटिक्स
+churn early-warning||churn early-warning|चर्न अर्ली-वार्निंग|चर्न अर्ली-वॉर्निंग
+Members Directory||Members Directory|सदस्य निर्देशिका|सदस्य यादी
+every member's profile, plan and attendance||har member ka profile, plan aur attendance|हर सदस्य की प्रोफ़ाइल, प्लान और उपस्थिति|प्रत्येक सदस्याची प्रोफाइल, प्लॅन आणि उपस्थिती
+Gym Equipment||Gym Equipment|जिम उपकरण|जिम उपकरणे
+every machine, photo and service status||har machine, photo aur service status|हर मशीन, फोटो और सर्विस स्थिति|प्रत्येक मशीन, फोटो आणि सर्व्हिस स्थिती
+My Profile||Meri Profile|मेरी प्रोफ़ाइल|माझी प्रोफाइल
+plan, visits and today's workout||plan, visits aur aaj ka workout|प्लान, विज़िट और आज का वर्कआउट|प्लॅन, भेटी आणि आजचा वर्कआउट
+Business Profile||Business Profile|बिज़नेस प्रोफ़ाइल|व्यवसाय प्रोफाइल
+your details, business and branches||aapki details, business aur branches|आपकी जानकारी, बिज़नेस और शाखाएं|तुमची माहिती, व्यवसाय आणि शाखा
+Class Schedule||Class Schedule|क्लास शेड्यूल|क्लास वेळापत्रक
+timetable, bookings and trainer shifts||timetable, bookings aur trainer shifts|टाइमटेबल, बुकिंग और ट्रेनर शिफ्ट|टाइमटेबल, बुकिंग आणि ट्रेनर शिफ्ट
+Social Media||Social Media|सोशल मीडिया|सोशल मीडिया
+accounts, content and post scheduler||accounts, content aur post scheduler|अकाउंट, कंटेंट और पोस्ट शेड्यूलर|अकाउंट, कंटेंट आणि पोस्ट शेड्यूलर
+Membership Plans||Membership Plans|मेंबरशिप प्लान|मेंबरशिप प्लॅन्स
+pricing and free perks per plan||pricing aur har plan ke free perks|कीमत और हर प्लान के मुफ्त पर्क्स|किंमत आणि प्रत्येक प्लॅनचे मोफत पर्क्स
+📱 Member||📱 Member|📱 सदस्य|📱 सदस्य
+👑 Owner / Team||👑 Owner / Team|👑 मालिक / टीम|👑 मालक / टीम
+Member login||Member login|सदस्य लॉगिन|सदस्य लॉगिन
+Owner & team login||Owner & team login|मालिक और टीम लॉगिन|मालक आणि टीम लॉगिन
+Gym owner se mile ID aur password se login karein.|Log in with the ID and password given by your gym owner.||जिम मालिक से मिले ID और पासवर्ड से लॉगिन करें।|जिम मालकाकडून मिळालेल्या ID आणि पासवर्डने लॉगिन करा.
+Owner, reception staff aur trainers yahan se enter karein.|Owner, reception staff and trainers sign in here.||मालिक, रिसेप्शन स्टाफ और ट्रेनर यहां से लॉगिन करें।|मालक, रिसेप्शन स्टाफ आणि ट्रेनर येथे लॉगिन करा.
+Member ID / Username||Member ID / Username|मेंबर ID / यूज़रनेम|सदस्य ID / युजरनेम
+Password||Password|पासवर्ड|पासवर्ड
+Email||Email|ईमेल|ईमेल
+🔒 Sign-up nahi hota — ID aur password gym owner dete hain.|🔒 No sign-up — your gym owner gives you the ID and password.||🔒 साइन-अप नहीं होता — ID और पासवर्ड जिम मालिक देते हैं।|🔒 साइन-अप नाही — ID आणि पासवर्ड जिम मालक देतात.
+Demo: fill Aarav's login||Demo: Aarav ka login bharein|डेमो: आरव का लॉगिन भरें|डेमो: आरवचा लॉगिन भरा
+🔒 Encrypted session||🔒 Encrypted session|🔒 एन्क्रिप्टेड सेशन|🔒 एन्क्रिप्टेड सेशन
+role-based access||role-based access|रोल-आधारित एक्सेस|रोल-आधारित ॲक्सेस
+🚀 Offline se Online|🚀 Offline to Online||🚀 ऑफलाइन से ऑनलाइन|🚀 ऑफलाइन ते ऑनलाइन
+Aapka gym.|Your gym.||आपका जिम।|तुमची जिम.
+Ab|Now on||अब|आता
+autopilot|autopilot||ऑटोपायलट|ऑटोपायलट
+par.|~||पर।|वर.
+Fees ka register, bhoole hue renewals aur gayab members — teeno problems ka ek app me solution.|Fee registers, forgotten renewals and ghost members — one app solves all three problems.||फीस का रजिस्टर, भूले हुए रिन्यूअल और गायब मेंबर्स — तीनों समस्याओं का एक ऐप में समाधान।|फी रजिस्टर, विसरलेले रिन्यूअल आणि गायब सदस्य — तिन्ही समस्यांवर एकाच ॲपमध्ये उपाय.
+Fees ka register|Fees register||फीस का रजिस्टर|फी रजिस्टर
+200 members, sab haath se likha|200 members, all written by hand||200 सदस्य, सब हाथ से लिखा|200 सदस्य, सर्व हाताने लिहिलेले
+Renewal miss|Missed renewals||रिन्यूअल मिस|रिन्यूअल चुकले
+Plan khatam, na member ko yaad, na aapko|Plan expired — neither member nor you remembered||प्लान खत्म, न सदस्य को याद, न आपको|प्लॅन संपला, ना सदस्याला आठवण, ना तुम्हाला
+Gayab members|Ghost members||गायब मेंबर्स|गायब सदस्य
+Pehle mahine roz, teesre mahine ghost|Daily in month one, ghost by month three||पहले महीने रोज़, तीसरे महीने गायब|पहिल्या महिन्यात रोज, तिसऱ्या महिन्यात गायब
+🔐 Login||🔐 Login|🔐 लॉगिन|🔐 लॉगिन
+📱 Member app||📱 Member app|📱 सदस्य ऐप|📱 सदस्य ॲप
+🧾 Reception||🧾 Reception|🧾 रिसेप्शन|🧾 रिसेप्शन
+🏋️ Trainer||🏋️ Trainer|🏋️ ट्रेनर|🏋️ ट्रेनर
+👑 Owner||👑 Owner|👑 मालिक|👑 मालक
+🌐 4 languages||🌐 4 languages|🌐 4 भाषाएं|🌐 4 भाषा
+💰 ₹18,400 aaj ki collection|💰 ₹18,400 collected today||💰 आज की कलेक्शन ₹18,400|💰 आजचे कलेक्शन ₹18,400
+🟢 42 members andar|🟢 42 members inside||🟢 42 सदस्य अंदर|🟢 42 सदस्य आत
+🔔 6 renewals due||🔔 6 renewals due|🔔 6 रिन्यूअल बाकी|🔔 6 रिन्यूअल बाकी
+⚡ IronPulse — your gym on autopilot||⚡ IronPulse — aapka gym autopilot par|⚡ IronPulse — आपका जिम ऑटोपायलट पर|⚡ IronPulse — तुमची जिम ऑटोपायलटवर
+Active||Active|सक्रिय|सक्रिय
+Expiring||Expiring|खत्म होने वाला|संपत आलेला
+Expired||Expired|समाप्त|संपलेला
+Inside||Andar|अंदर|आत
+Checked out||Checked out|चेक-आउट|चेक-आउट
+High||High|उच्च|उच्च
+Medium||Medium|मध्यम|मध्यम
+Working||Working|चालू|चालू
+Service due||Service due|सर्विस बाकी|सर्व्हिस बाकी
+Maintenance||Maintenance|मेंटेनेंस|देखभाल
+Scheduled||Scheduled|शेड्यूल्ड|नियोजित
+Posted||Posted|पोस्ट हो गया|पोस्ट झाले
+Full||Full|फुल|पूर्ण
+Book||Book|बुक करें|बुक करा
+Booked ✓||Booked ✓|बुक हो गया ✓|बुक झाले ✓
+Renew now||Renew now|अभी रिन्यू करें|आता रिन्यू करा
+On duty||On duty|ड्यूटी पर|ड्युटीवर
+Off now||Off now|अभी ऑफ|आता सुट्टीवर
+Daily revenue||Daily revenue|दैनिक आय|दैनिक उत्पन्न
+Checked-in members||Checked-in members|चेक-इन सदस्य|चेक-इन सदस्य
+Active members||Active members|सक्रिय सदस्य|सक्रिय सदस्य
+Expired members||Expired members|समाप्त सदस्य|संपलेले सदस्य
+Total members||Total members|कुल सदस्य|एकूण सदस्य
+New this month||Is mahine ke naye|इस महीने के नए|या महिन्यातील नवे
+Gym branches||Gym branches|जिम शाखाएं|जिम शाखा
+Machines||Machines|मशीनें|मशीन्स
+Machine types||Machine types|मशीन प्रकार|मशीन प्रकार
+Total units||Total units|कुल यूनिट|एकूण युनिट्स
+Needs attention||Needs attention|ध्यान चाहिए|लक्ष द्या
+Revenue — last 7 days (₹)||Revenue — last 7 days (₹)|आय — पिछले 7 दिन (₹)|उत्पन्न — मागील 7 दिवस (₹)
+Active vs expired||Active vs expired|सक्रिय बनाम समाप्त|सक्रिय विरुद्ध संपलेले
+across all branches||sabhi branches mila ke|सभी शाखाओं में|सर्व शाखांमध्ये
+joined in last 30 days||pichhle 30 din me jude|पिछले 30 दिनों में जुड़े|मागील 30 दिवसांत सामील
+types in inventory||inventory me types|इन्वेंटरी में प्रकार|इन्व्हेंटरीतील प्रकार
+Healthy||Healthy|स्वस्थ|उत्तम
+Follow up today||Aaj follow up karein|आज फॉलो-अप करें|आज फॉलो-अप करा
+ID||ID|ID|ID
+Mobile||Mobile|मोबाइल|मोबाईल
+Plan||Plan|प्लान|प्लॅन
+Branch||Branch|शाखा|शाखा
+Expires||Expires|समाप्ति|समाप्ती
+Status||Status|स्थिति|स्थिती
+In||In|अंदर|आत
+Out||Out|बाहर|बाहेर
+Receipt||Receipt|रसीद|पावती
+Mode||Mode|मोड|मोड
+Amount||Amount|राशि|रक्कम
+Priority||Priority|प्राथमिकता|प्राधान्य
+Amount due||Amount due|बकाया राशि|थकित रक्कम
+Last visit||Last visit|आखिरी विज़िट|शेवटची भेट
+Absent||Absent|गैरहाज़िर|गैरहजर
+Churn risk||Churn risk|चर्न जोखिम|चर्न जोखीम
+Early joined||Joined|जुड़ने का समय|सामील होण्याचा काळ
+Live attendance||Live attendance|लाइव उपस्थिति|लाइव्ह उपस्थिती
+Inside gym now||Abhi gym ke andar|अभी जिम के अंदर|आता जिममध्ये
+Checked in today||Aaj check-in hue|आज चेक-इन|आज चेक-इन
+Quick check-in||Quick check-in|क्विक चेक-इन|क्विक चेक-इन
+Check in||Check in|चेक-इन|चेक-इन
+Check out||Check out|चेक-आउट|चेक-आउट
+live||live|लाइव|लाइव्ह
+Collect payment||Payment collect karein|भुगतान लें|पेमेंट घ्या
+Amount (₹)||Amount (₹)|राशि (₹)|रक्कम (₹)
+Plan renewed||Plan renewed|रिन्यू किया गया प्लान|रिन्यू केलेला प्लॅन
+Process & generate receipt||Process karke receipt banayein|प्रोसेस करें और रसीद बनाएं|प्रोसेस करा आणि पावती तयार करा
+Receipt will appear here after payment.||Payment ke baad receipt yahan dikhegi.|भुगतान के बाद रसीद यहां दिखेगी।|पेमेंटनंतर पावती येथे दिसेल.
+Payment log||Payment log|भुगतान लॉग|पेमेंट लॉग
+Remind all on WhatsApp||Sabko WhatsApp par remind karein|सभी को WhatsApp पर याद दिलाएं|सर्वांना WhatsApp वर आठवण करा
+Send win-back||Win-back bhejein|वापसी ऑफर भेजें|परत-आणा ऑफर पाठवा
+👻 Ghost members||👻 Ghost members|👻 गायब सदस्य|👻 गायब सदस्य
+AI flags members with no visit in 15–30+ days||AI un members ko flag karta hai jo 15–30+ din se nahi aaye|AI उन सदस्यों को फ़्लैग करता है जो 15–30+ दिनों से नहीं आए|ज्यांनी 15–30+ दिवस भेट दिली नाही त्यांना AI फ्लॅग करते
+All||All|सभी|सर्व
+15+ days||15+ days|15+ दिन|15+ दिवस
+30+ days||30+ days|30+ दिन|30+ दिवस
+Create diet plan||Diet plan banayein|डाइट प्लान बनाएं|डाएट प्लॅन तयार करा
+Save & send to member||Save karke member ko bhejein|सेव करें और सदस्य को भेजें|सेव्ह करून सदस्याला पाठवा
+Daily total||Daily total|कुल दैनिक|दैनिक एकूण
+🍳 Breakfast||🍳 Breakfast|🍳 नाश्ता|🍳 न्याहारी
+🍛 Lunch||🍛 Lunch|🍛 दोपहर का खाना|🍛 दुपारचे जेवण
+🥜 Snacks||🥜 Snacks|🥜 स्नैक्स|🥜 स्नॅक्स
+🍽 Dinner||🍽 Dinner|🍽 रात का खाना|🍽 रात्रीचे जेवण
+Today's workout||Aaj ka workout|आज का वर्कआउट|आजचा वर्कआउट
+Scan to check in||Scan karke check-in karein|चेक-इन के लिए स्कैन करें|चेक-इनसाठी स्कॅन करा
+Point your camera at the QR at the front desk.||Front desk ke QR par camera karein.|फ्रंट डेस्क के QR पर कैमरा रखें।|फ्रंट डेस्कवरील QR वर कॅमेरा धरा.
+Simulate scan||Scan simulate karein|स्कैन सिम्युलेट करें|स्कॅन सिम्युलेट करा
+Auto-detect scan||Auto-detect scan|ऑटो-डिटेक्ट स्कैन|ऑटो-डिटेक्ट स्कॅन
+Scan Success toggle||Scan Success toggle|स्कैन सफल टॉगल|स्कॅन यशस्वी टॉगल
+Show success||Success dikhayein|सफलता दिखाएं|यश दाखवा
+Scan Success||Scan Success|स्कैन सफल|स्कॅन यशस्वी
+Done||Done|हो गया|झाले
+This month||Is mahine|इस महीने|या महिन्यात
+visits||visits|विज़िट|भेटी
+Joined on||Joined on|जुड़ने की तारीख|सामील झाल्याची तारीख
+Total visits||Total visits|कुल विज़िट|एकूण भेटी
+Streak||Streak|स्ट्रीक|स्ट्रीक
+Goal||Goal|लक्ष्य|ध्येय
+Start||Start|शुरू करें|सुरू करा
+Last 30 days||Last 30 days|पिछले 30 दिन|मागील 30 दिवस
+Attendance — this month||Attendance — is mahine|उपस्थिति — इस महीने|उपस्थिती — या महिन्यात
+Payments||Payments|भुगतान|पेमेंट्स
+Renew / collect fee||Renew / fee collect karein|रिन्यू / फीस लें|रिन्यू / फी घ्या
+Reset password||Password reset karein|पासवर्ड रीसेट करें|पासवर्ड रीसेट करा
+Username||Username|यूज़रनेम|युजरनेम
+Joined||Joined|जुड़े|सामील
+Plan expires||Plan expires|प्लान समाप्ति|प्लॅन समाप्ती
+show||show|दिखाएं|दाखवा
+hide||hide|छिपाएं|लपवा
+Never||Never|कभी नहीं|कधीच नाही
+New member details||Naye member ki details|नए सदस्य की जानकारी|नवीन सदस्याची माहिती
+Full name||Poora naam|पूरा नाम|पूर्ण नाव
+Mobile (WhatsApp)||Mobile (WhatsApp)|मोबाइल (WhatsApp)|मोबाईल (WhatsApp)
+Age||Age|उम्र|वय
+Gender||Gender|लिंग|लिंग
+Fitness goal||Fitness goal|फिटनेस लक्ष्य|फिटनेस ध्येय
+Gym branch||Gym branch|जिम शाखा|जिम शाखा
+Assigned trainer||Assigned trainer|नियुक्त ट्रेनर|नेमलेला ट्रेनर
+Amount received (₹)||Mili hui raashi (₹)|प्राप्त राशि (₹)|मिळालेली रक्कम (₹)
+Payment mode||Payment mode|भुगतान मोड|पेमेंट मोड
+Create member & generate login||Member banayein aur login generate karein|सदस्य बनाएं और लॉगिन जनरेट करें|सदस्य तयार करा आणि लॉगिन जनरेट करा
+Login credentials||Login credentials|लॉगिन विवरण|लॉगिन तपशील
+Members khud sign-up nahi kar sakte. Form bharte hi yahan Member ID, username aur password ban jayega — use member ko WhatsApp par bhej dein.|Members cannot sign up on their own. Fill the form and the Member ID, username and password will appear here — send it to the member on WhatsApp.||सदस्य खुद साइन-अप नहीं कर सकते। फ़ॉर्म भरते ही यहां मेंबर ID, यूज़रनेम और पासवर्ड बन जाएगा — उसे WhatsApp पर भेज दें।|सदस्य स्वतः साइन-अप करू शकत नाहीत. फॉर्म भरताच येथे सदस्य ID, युजरनेम आणि पासवर्ड तयार होईल — तो WhatsApp वर पाठवा.
+✅ Member created||✅ Member created|✅ सदस्य बनाया गया|✅ सदस्य तयार झाला
+Send on WhatsApp||WhatsApp par bhejein|WhatsApp पर भेजें|WhatsApp वर पाठवा
+Copy||Copy|कॉपी|कॉपी
+View profile||Profile dekhein|प्रोफ़ाइल देखें|प्रोफाइल पहा
+Cash||Cash|नकद|रोख
+Card||Card|कार्ड|कार्ड
+Male||Male|पुरुष|पुरुष
+Female||Female|महिला|महिला
+Other||Other|अन्य|इतर
+Fat loss||Fat loss|वज़न घटाना|वजन कमी
+Muscle gain||Muscle gain|मसल गेन|स्नायू वाढ
+Strength||Strength|ताकत|ताकद
+General fitness||General fitness|सामान्य फिटनेस|सामान्य फिटनेस
+Try us out||Try us out|ट्राई करें|ट्राय करा
+Most popular||Most popular|सबसे लोकप्रिय|सर्वात लोकप्रिय
+Save 17%||Save 17%|17% बचत|17% बचत
+Best value||Best value|सर्वोत्तम मूल्य|सर्वोत्तम किंमत
+1 Month||1 Month|1 महीना|1 महिना
+3 Months||3 Months|3 महीने|3 महिने
+6 Months||6 Months|6 महीने|6 महिने
+12 Months||12 Months|12 महीने|12 महिने
+All members||All members|सभी सदस्य|सर्व सदस्य
+➕ Add member||➕ Member jodein|➕ सदस्य जोड़ें|➕ सदस्य जोडा
+All branches||All branches|सभी शाखाएं|सर्व शाखा
+View||View|देखें|पहा
+Add a machine||Machine jodein|मशीन जोड़ें|मशीन जोडा
+Category||Category|श्रेणी|वर्ग
+Add||Add|जोड़ें|जोडा
+Tip: tap 📷 on any card to put the real photo of that machine.||Tip: kisi bhi card par 📷 dabake us machine ki asli photo lagayein.|सुझाव: किसी भी कार्ड पर 📷 दबाकर उस मशीन की असली फोटो लगाएं।|टीप: कोणत्याही कार्डवर 📷 दाबून त्या मशीनचा खरा फोटो लावा.
+Cardio||Cardio|कार्डियो|कार्डिओ
+Chest||Chest|छाती|छाती
+Back||Back|पीठ|पाठ
+Legs||Legs|पैर|पाय
+Shoulders & Arms||Shoulders & Arms|कंधे और बाजू|खांदे आणि हात
+Free Weights||Free Weights|फ्री वेट्स|फ्री वेट्स
+Core & Functional||Core & Functional|कोर और फंक्शनल|कोअर आणि फंक्शनल
+ready to use||ready to use|उपयोग के लिए तैयार|वापरासाठी तयार
+service / repair||service / repair|सर्विस / मरम्मत|सर्व्हिस / दुरुस्ती
+3 branches||3 branches|3 शाखाएं|3 शाखा
+Owner details||Owner details|मालिक की जानकारी|मालकाची माहिती
+Business details||Business details|बिज़नेस की जानकारी|व्यवसायाची माहिती
+Owner name||Owner ka naam|मालिक का नाम|मालकाचे नाव
+Business name||Business ka naam|बिज़नेस का नाम|व्यवसायाचे नाव
+Tagline||Tagline|टैगलाइन|टॅगलाइन
+Udyam / MSME no.||Udyam / MSME no.|उद्यम / MSME नं.|उद्यम / MSME क्र.
+Registered address||Registered address|पंजीकृत पता|नोंदणीकृत पत्ता
+Opening hours (Mon–Sat)||Opening hours (Mon–Sat)|खुलने का समय (सोम–शनि)|उघडण्याची वेळ (सोम–शनि)
+Sunday||Sunday|रविवार|रविवार
+UPI ID for payments||Payments ke liye UPI ID|भुगतान के लिए UPI ID|पेमेंटसाठी UPI ID
+Social media & online||Social media & online|सोशल मीडिया और ऑनलाइन|सोशल मीडिया आणि ऑनलाइन
+WhatsApp Business||WhatsApp Business|WhatsApp बिज़नेस|WhatsApp बिझनेस
+Google Maps / Website||Google Maps / Website|गूगल मैप्स / वेबसाइट|गुगल मॅप्स / वेबसाइट
+Branches||Branches|शाखाएं|शाखा
+Save changes||Save changes|बदलाव सेव करें|बदल सेव्ह करा
+Trainer shifts||Trainer shifts|ट्रेनर शिफ्ट|ट्रेनर शिफ्ट
+Add a class||Class jodein|क्लास जोड़ें|क्लास जोडा
+Class name||Class ka naam|क्लास का नाम|क्लासचे नाव
+Day||Day|दिन|दिवस
+Time||Time|समय|वेळ
+Capacity||Capacity|क्षमता|क्षमता
+No classes on this day.||Is din koi class nahi.|इस दिन कोई क्लास नहीं।|या दिवशी क्लास नाही.
+Schedule a post||Post schedule karein|पोस्ट शेड्यूल करें|पोस्ट शेड्यूल करा
+Schedule post||Post schedule karein|पोस्ट शेड्यूल करें|पोस्ट शेड्यूल करा
+Caption||Caption|कैप्शन|कॅप्शन
+Platforms||Platforms|प्लेटफ़ॉर्म|प्लॅटफॉर्म
+Date||Date|तारीख|तारीख
+Content calendar||Content calendar|कंटेंट कैलेंडर|कंटेंट कॅलेंडर
+next 7 days||next 7 days|अगले 7 दिन|पुढील 7 दिवस
+Scheduled posts||Scheduled posts|शेड्यूल्ड पोस्ट|नियोजित पोस्ट
+Quick ideas||Quick ideas|त्वरित आइडिया|झटपट कल्पना
+followers||followers|फॉलोअर्स|फॉलोअर्स
+subscribers||subscribers|सब्सक्राइबर|सबस्क्रायबर
+broadcast contacts||broadcast contacts|ब्रॉडकास्ट संपर्क|ब्रॉडकास्ट संपर्क
+🎁 Free perks & accessories||🎁 Free perks & accessories|🎁 मुफ्त पर्क्स और एक्सेसरीज़|🎁 मोफत पर्क्स आणि ॲक्सेसरीज
+Accessories are free on every plan. Choose the minimum plan for each extra perk.||Accessories har plan me free hain. Har extra perk ke liye minimum plan chunein.|हर प्लान में एक्सेसरीज़ मुफ्त हैं। हर अतिरिक्त पर्क के लिए न्यूनतम प्लान चुनें।|प्रत्येक प्लॅनमध्ये ॲक्सेसरीज मोफत आहेत. प्रत्येक अतिरिक्त पर्कसाठी किमान प्लॅन निवडा.
+Perk||Perk|पर्क|पर्क
+Included from||Included from|से शामिल|पासून समाविष्ट
+Type||Type|प्रकार|प्रकार
+Free accessory||Free accessory|मुफ्त एक्सेसरी|मोफत ॲक्सेसरी
+Extra perk||Extra perk|अतिरिक्त पर्क|अतिरिक्त पर्क
+🎁 Your free perks||🎁 Aapke free perks|🎁 आपके मुफ्त पर्क्स|🎁 तुमचे मोफत पर्क्स
+Gym towel & water||Gym towel & water|जिम तौलिया और पानी|जिम टॉवेल आणि पाणी
+Protein shaker bottle||Protein shaker bottle|प्रोटीन शेकर बोतल|प्रोटीन शेकर बाटली
+Lifting straps & belt||Lifting straps & belt|लिफ्टिंग स्ट्रैप्स और बेल्ट|लिफ्टिंग स्ट्रॅप्स आणि बेल्ट
+Resistance bands set||Resistance bands set|रेज़िस्टेंस बैंड सेट|रेझिस्टन्स बँड सेट
+Smart locker||Smart locker|स्मार्ट लॉकर|स्मार्ट लॉकर
+Personalised diet plan||Personalised diet plan|पर्सनलाइज़्ड डाइट प्लान|वैयक्तिक डाएट प्लॅन
+InBody body scan||InBody body scan|InBody बॉडी स्कैन|InBody बॉडी स्कॅन
+Group classes (Zumba, Yoga, HIIT)||Group classes (Zumba, Yoga, HIIT)|ग्रुप क्लासेस (ज़ुम्बा, योग, HIIT)|ग्रुप क्लासेस (झुंबा, योग, HIIT)
+Steam & sauna||Steam & sauna|स्टीम और सौना|स्टीम आणि सौना
+Smart fitness band||Smart fitness band|स्मार्ट फिटनेस बैंड|स्मार्ट फिटनेस बँड
+Free PT sessions||Free PT sessions|मुफ्त PT सेशन|मोफत PT सेशन्स
+Ice-bath recovery zone||Ice-bath recovery zone|आइस-बाथ रिकवरी ज़ोन|आइस-बाथ रिकव्हरी झोन
+Guest passes||Guest passes|गेस्ट पास|गेस्ट पास
+Mon||Mon|सोम|सोम
+Tue||Tue|मंगल|मंगळ
+Wed||Wed|बुध|बुध
+Thu||Thu|गुरु|गुरु
+Fri||Fri|शुक्र|शुक्र
+Sat||Sat|शनि|शनी
+Sun||Sun|रवि|रवि
+Member ka poora naam daalo|Enter the member's full name||सदस्य का पूरा नाम डालें|सदस्याचे पूर्ण नाव टाका
+10 digit ka mobile number daalo|Enter a 10-digit mobile number||10 अंकों का मोबाइल नंबर डालें|10 अंकी मोबाईल नंबर टाका
+Ye mobile number pehle se registered hai|This mobile number is already registered||यह मोबाइल नंबर पहले से पंजीकृत है|हा मोबाईल नंबर आधीच नोंदणीकृत आहे
+❌ ID/username ya password galat hai|❌ Wrong ID/username or password||❌ ID/यूज़रनेम या पासवर्ड गलत है|❌ ID/युजरनेम किंवा पासवर्ड चुकीचा आहे
+❌ Email ya password galat hai (demo: password123)|❌ Wrong email or password (demo: password123)||❌ ईमेल या पासवर्ड गलत है (डेमो: password123)|❌ ईमेल किंवा पासवर्ड चुकीचा आहे (डेमो: password123)
+🔒 Ye screen is login me nahi hai|🔒 This screen is not available for this login||🔒 यह स्क्रीन इस लॉगिन के लिए नहीं है|🔒 ही स्क्रीन या लॉगिनसाठी नाही
+Logged out||Logged out|लॉग आउट हो गया|लॉग आउट झाले
+Credentials copied||Credentials copy ho gaye|क्रेडेंशियल कॉपी हुए|क्रेडेंशियल्स कॉपी झाले
+Machine ka naam daalo|Enter the machine name||मशीन का नाम डालें|मशीनचे नाव टाका
+Price updated ✓||Price updated ✓|कीमत अपडेट हुई ✓|किंमत अपडेट झाली ✓
+Class booked ✓||Class booked ✓|क्लास बुक हो गई ✓|क्लास बुक झाली ✓
+Booking cancelled||Booking cancelled|बुकिंग रद्द हुई|बुकिंग रद्द झाले
+Class added ✓||Class added ✓|क्लास जोड़ी गई ✓|क्लास जोडली ✓
+Post scheduled ✓||Post scheduled ✓|पोस्ट शेड्यूल हो गई ✓|पोस्ट शेड्यूल झाली ✓
+Write a caption and pick a platform||Write a caption and pick a platform|कैप्शन लिखें और प्लेटफ़ॉर्म चुनें|कॅप्शन लिहा आणि प्लॅटफॉर्म निवडा
+Business details saved ✓||Business details saved ✓|बिज़नेस जानकारी सेव हो गई ✓|व्यवसाय माहिती सेव्ह झाली ✓
+Payment recorded||Payment recorded|भुगतान दर्ज हुआ|पेमेंट नोंदवले
+Enter a valid amount||Enter a valid amount|सही राशि डालें|योग्य रक्कम टाका
+Enter the class name||Enter the class name|क्लास का नाम डालें|क्लासचे नाव टाका`.split('\n'),DK={};
+DL.forEach(l=>{const a=l.split('|');if(a.length!=5)return;const o={en:a[1]||a[0],hg:a[2]||a[0],hi:a[3]||a[0],mr:a[4]||a[0]};for(const k in o)if(o[k]=='~')o[k]='';DK[a[0]]=o});
+const PT=[[/^(\d+) days left$/,'$1 din baaki','$1 दिन बाकी','$1 दिवस बाकी'],[/^(\d+) days$/,'$1 din','$1 दिन','$1 दिवस'],[/^Plan ends (.+)$/,'Plan $1 ko khatam','प्लान $1 को खत्म','प्लॅन $1 रोजी संपेल'],[/^Plan ended (.+)$/,'Plan $1 ko khatam hua','प्लान $1 को खत्म हुआ','प्लॅन $1 रोजी संपला'],[/^(\d+)% of plan used$/,'Plan ka $1% use hua','प्लान का $1% उपयोग हुआ','प्लॅनचा $1% वापर झाला'],[/^ended (\d+) days ago$/,'$1 din pehle khatam','$1 दिन पहले खत्म','$1 दिवसांपूर्वी संपला'],[/^(\d+) exercises$/,'$1 exercises','$1 व्यायाम','$1 व्यायाम'],[/^(\d+) clients$/,'$1 clients','$1 क्लाइंट','$1 क्लायंट'],[/^🎁 (\d+) perks$/,'🎁 $1 perks','🎁 $1 पर्क्स','🎁 $1 पर्क्स'],[/^(\d+) spots left$/,'$1 jagah baaki','$1 जगह बाकी','$1 जागा शिल्लक'],[/^Sign in as (.+)$/,'$1 ke roop me sign in karein','$1 के रूप में साइन इन करें','$1 म्हणून साइन इन करा'],[/^Member ID (.+)$/,'Member ID $1','सदस्य ID $1','सदस्य ID $1'],[/^Day (\d+)$/,'Din $1','दिन $1','दिवस $1'],[/^Serviced (.+)$/,'Service: $1','सर्विस: $1','सर्व्हिस: $1'],[/^Joined (\d+) months ago$/,'$1 mahine pehle joined','$1 महीने पहले जुड़े','$1 महिन्यांपूर्वी सामील'],[/^New password: (.+)$/,'Naya password: $1','नया पासवर्ड: $1','नवीन पासवर्ड: $1'],[/^(\d+) min$/,'$1 min','$1 मिनट','$1 मिनिटे'],[/^Coach (.+)$/,'Coach $1','कोच $1','कोच $1'],[/^(\d+) members$/,'$1 members','$1 सदस्य','$1 सदस्य'],[/^(\d+) posts?$/,'$1 post','$1 पोस्ट','$1 पोस्ट'],[/^(\d+) reviews$/,'$1 reviews','$1 रिव्यू','$1 रिव्ह्यू'],[/^🟢 (\d+) members inside now$/,'🟢 abhi $1 members andar','🟢 अभी $1 सदस्य अंदर','🟢 आता $1 सदस्य आत'],[/^💰 ₹(.+) collected today$/,'💰 aaj ₹$1 collect hua','💰 आज ₹$1 कलेक्शन','💰 आज ₹$1 जमा'],[/^🔔 (\d+) renewals due this week$/,'🔔 is hafte $1 renewals due','🔔 इस हफ्ते $1 रिन्यूअल बाकी','🔔 या आठवड्यात $1 रिन्यूअल बाकी'],[/^👻 (\d+) members at risk of leaving$/,'👻 $1 members chhodne ke risk par','👻 $1 सदस्य छोड़ने के जोखिम पर','👻 $1 सदस्य सोडण्याच्या जोखमीवर'],[/^Welcome back (.+?) 🔥 (\d+)-day streak!$/,'Welcome back $1 🔥 $2 din ki streak!','वापसी पर स्वागत $1 🔥 $2 दिन की स्ट्रीक!','पुन्हा स्वागत $1 🔥 $2 दिवसांची स्ट्रीक!']];
+const LI={hg:1,hi:2,mr:3};
+function T1(k){const d=DK[k];if(d)return d[LANG];if(LANG!='en')for(const p of PT)if(p[0].test(k))return k.replace(p[0],p[LI[LANG]]);if(k.includes(' · ')){let ch=false;const o=k.split(' · ').map(x=>{const t=T1(x);if(t!==null){ch=true;return t}return x});return ch?o.join(' · '):null}return null}
+function tr(o){const m=o.match(/^(\s*)([\s\S]*?)(\s*)$/);if(!m[2])return o;const v=T1(m[2]);return v===null?o:m[1]+v+m[3]}
+function tx(n){const p=n.parentNode;if(!p||/^(SCRIPT|STYLE)$/.test(p.nodeName))return;if(n.__t!==undefined&&n.nodeValue===n.__t)return;n.__o=n.nodeValue;const r=tr(n.__o);n.__t=r;if(r!==n.nodeValue)n.nodeValue=r}
+function applyLang(){const w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);let n;while(n=w.nextNode()){if(/^(SCRIPT|STYLE)$/.test(n.parentNode.nodeName))continue;if(n.__o===undefined||(n.__t!==undefined&&n.nodeValue!==n.__t))n.__o=n.nodeValue;const r=tr(n.__o);n.__t=r;if(n.nodeValue!==r)n.nodeValue=r}
+const PH={'Search name, ID, mobile…':['Name, ID, mobile se search karein…','नाम, ID, मोबाइल से खोजें…','नाव, ID, मोबाईलने शोधा…'],'Search machine…':['Machine search karein…','मशीन खोजें…','मशीन शोधा…'],'Machine name':['Machine ka naam','मशीन का नाम','मशीनचे नाव'],'Write your post…':['Apna post likhein…','अपनी पोस्ट लिखें…','तुमची पोस्ट लिहा…'],'e.g. Rohan Patil':['jaise Rohan Patil','जैसे रोहन पाटिल','उदा. रोहन पाटील'],'Given by your gym owner':['Gym owner ne diya hua','जिम मालिक द्वारा दिया गया','जिम मालकाने दिलेला']};
+$$('[placeholder]').forEach(e=>{if(e.dataset.p0===undefined)e.dataset.p0=e.getAttribute('placeholder');const a=PH[e.dataset.p0];e.setAttribute('placeholder',a&&LANG!='en'?a[LI[LANG]-1]:e.dataset.p0)});
+document.documentElement.lang={en:'en',hg:'en-IN',hi:'hi',mr:'mr'}[LANG];$$('.lang button').forEach(b=>b.classList.toggle('on',b.dataset.l==LANG))}
+new MutationObserver(ms=>{ms.forEach(m=>{if(m.type=='characterData')tx(m.target);else m.addedNodes.forEach(a=>{if(a.nodeType==3)tx(a);else if(a.nodeType==1){const w=document.createTreeWalker(a,NodeFilter.SHOW_TEXT);let n;while(n=w.nextNode())tx(n)}})})}).observe(document.body,{childList:true,subtree:true,characterData:true});
+$$('.lang button').forEach(b=>b.onclick=()=>{LANG=b.dataset.l;try{localStorage.setItem('ip_lang',LANG)}catch(e){}applyLang();$('#mdl').classList.remove('on');go(curS)});
+applyLang();
 go(1);
 </script></body></html>
